@@ -46,9 +46,17 @@ img {
 }
 */
 
+/* animation der virker
 @keyframes loadingscreen {
 	0%   {opacity: 100; visibility: visible;}
 	100% {visibility: hidden;}
+}
+*/
+
+@keyframes loadingscreen {
+	0%   {opacity: 100;}
+	60%  {opacity: 100;}
+	100% {opacity: 0; visibility: hidden}
 }
 
 /* The element to apply the animation to */
