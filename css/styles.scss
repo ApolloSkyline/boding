@@ -4,7 +4,7 @@
 
 body {
 	margin: 0;
-	background-color: black;
+	background-color: white;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -69,8 +69,51 @@ img {
 	animation-duration: 4s;
 	animation-iteration-count: 1;
 	animation-fill-mode: forwards;
+	.load__gif {
+		display: flex;
+	}
 }
 
-.load__gif {
+
+
+.hero {
+	background-color: black;
+	background-image: url("../images/boding_hero_mobile.png");
+	background-size: cover;
+	background-position: center center;
+	width: 100%;
+	height: 434px;
+	.logo {
+		width: 279px;
+		height: auto;
+		margin: 0 auto;
+		padding-top: 17px;
+	}
+}
+
+.video {
 	display: flex;
+	width: 100%;
+	margin: 0 auto;
+	justify-content: center;
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	height: 0;
+	iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.button {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin: 0 auto;
+	img{
+		margin: 0 auto;
+	}
 }
