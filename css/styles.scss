@@ -8,6 +8,11 @@ body {
 	background-color: white;
 	font-size: 16px;
 }
+@media screen and (min-width: 768px) {
+	body {
+		font-size: 18px;
+	}
+}
 
 h1, h2, h3, h4, h5, h6 {
 	margin: 0;
@@ -16,11 +21,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1{
-	font-size: 32px;
+	font-size: 2rem;
+}
+@media screen and (min-width: 768px) {
+	h1 {
+		font-size: 3rem;
+	}
 }
 
 h2 {
-	font-size: 22px;
+	font-size: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+	h2 {
+		font-size: 2rem;
+	}
 }
 
 ul, ol {
@@ -98,6 +113,11 @@ a {
 	width: 100%;
 	height: 434px;
 }
+@media screen and (min-width: 768px) {
+	.hero {
+		background-image: url("../images/boding_hero.png");
+	}
+}
 
 .logo {
 	width: 279px;
@@ -107,21 +127,6 @@ a {
 	img {
 		margin: 0 auto;
 	}
-}
-
-.page {
-	margin-left: 37px;
-	margin-right: 37px;
-}
-
-.wrapper {
-	margin-top: 1rem;
-	margin-bottom: 1rem;
-}
-
-.wrapper--footer{
-	padding-top: 0.5rem;
-	padding-bottom: 0.5rem;
 }
 
 .SoMe {
@@ -134,21 +139,68 @@ a {
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
+@media screen and (min-width: 768px) {
+	.SoMe {
+		flex-direction: column;
+		height: 200px;
+		align-items: flex-start;
+		margin: 50px 0 0 30px;
+	}
+}
+
+.page {
+	margin: 0 37px 0 37px;
+}
+@media screen and (min-width: 768px) {
+	.page {
+		margin: 0 109px 0 109px;
+	}
+}
+@media screen and (min-width: 1024px) {
+	.page {
+		margin: 0 142px 0 142px;
+	}
+}
+@media screen and (min-width: 1440px) {
+	.page {
+		margin: 0 280px 0 280px;
+	}
+}
+
+
+.wrapper {
+	margin: 1rem 0 1rem 0;
+}
+@media screen and (min-width: 768px) {
+	.wrapper {
+		margin: 2rem 0 2.5rem 0;
+	}
+}
+
+.wrapper--footer{
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
 
 .video {
-	display: flex;
-	width: 100%;
-	margin: 0 auto;
-	justify-content: center;
-	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
-	height: 0;
-	iframe {
-		position: absolute;
-		top: 0;
-		left: 0;
+	.video__embed {
+		display: flex;
 		width: 100%;
-		height: 100%;
+		margin: 0 auto;
+		justify-content: center;
+		position: relative;
+		padding-bottom: 56.25%; /* 16:9 */
+		height: 0;
+		iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+	.text {
+		margin: 20px 0 0 0;
 	}
 }
 
@@ -173,5 +225,30 @@ footer {
 	}
 	.copyright {
 		padding-bottom: 1rem;
+	}
+	.SoMe--footer {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		width: 150px;
+		margin: 0 auto;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+}
+@media screen and (min-width: 768px) {
+	footer {
+		padding: 0 109px 0 109px;
+	}
+}
+@media screen and (min-width: 1024px) {
+	footer {
+		padding: 0 142px 0 142px;
+	}
+}
+@media screen and (min-width: 1440px) {
+	footer {
+		padding: 0 280px 0 280px;
 	}
 }
