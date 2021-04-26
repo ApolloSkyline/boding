@@ -100,6 +100,9 @@ a {
 	animation-duration: 4s;
 	animation-iteration-count: 1;
 	animation-fill-mode: forwards;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	.load__gif {
 		display: flex;
 	}
@@ -111,11 +114,24 @@ a {
 	background-size: cover;
 	background-position: center center;
 	width: 100%;
-	height: 434px;
+	height: 100vw;
 }
 @media screen and (min-width: 768px) {
 	.hero {
 		background-image: url("../images/boding_hero.png");
+		height: 555px;
+	}
+}
+@media screen and (min-width: 1024px) {
+	.hero {
+		background-image: url("../images/boding_hero.png");
+		height: 728px;
+	}
+}
+@media screen and (min-width: 1920px) {
+	.hero {
+		background-image: url("../images/boding_hero.png");
+		height: 1166px;
 	}
 }
 
@@ -134,17 +150,54 @@ a {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	width: 150px;
+	width: 160px;
 	margin: 0 auto;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	.icon {
+		img	{
+			height: 20px;
+			margin: 0 auto;
+		}
+	}
+	.youtube {
+		img {
+			height: 20px;
+			margin: 0 auto;
+		}
+	}
+	.soundcloud {
+		img {
+			height: 20px;
+			margin: 0 auto;
+		}
+	}
 }
 @media screen and (min-width: 768px) {
 	.SoMe {
 		flex-direction: column;
-		height: 200px;
-		align-items: flex-start;
-		margin: 50px 0 0 30px;
+		height: 250px;
+		width: 50px;
+		align-items: center;
+		margin: 75px 0 0 20px;
+		.icon {
+			img {
+				height: 30px;
+				margin: 0 auto;
+			}
+		}
+		.youtube {
+			img {
+				height: 22px;
+				margin: 0 auto;
+			}
+		}
+		.soundcloud {
+			img {
+				height: 16px;
+				margin: 0 auto;
+			}
+		}
 	}
 }
 
@@ -166,7 +219,6 @@ a {
 		margin: 0 280px 0 280px;
 	}
 }
-
 
 .wrapper {
 	margin: 1rem 0 1rem 0;
@@ -191,6 +243,7 @@ a {
 		position: relative;
 		padding-bottom: 56.25%; /* 16:9 */
 		height: 0;
+		z-index: -1;
 		iframe {
 			position: absolute;
 			top: 0;
